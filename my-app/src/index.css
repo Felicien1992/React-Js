@@ -17,6 +17,7 @@ body {
   margin: 5rem auto;
   display: grid;
   gap: 2rem;
+  
 }
 .btn{
   background: red;
@@ -27,6 +28,11 @@ body {
   margin-top: 20px;
   color: #fff;
   font-size: large;
+}
+.p{
+  margin-top: 10px;
+  font-family: cursive;
+  color: #457809;
 }
 
 @media screen and (min-width: 768px) {

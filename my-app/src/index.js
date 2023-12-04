@@ -37,47 +37,95 @@ const sixthBook = {
 
 function BookList() {
   return (
-    <section className="booklist">
-      <Book
-        author={firstBook.author}
-        title={firstBook.title}
-        img={firstBook.img}
+    <main>
+      <h1
+        style={{ 
+          color: '#457809',
+          fontFamily: 'serif', 
+          textAlign: 'center',
+          marginTop:"30px"
+        }}
       >
-        <p className='p'>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
-          repudiandae inventore eos qui animi sed iusto alias eius ea sapiente.
-        </p>
-        <button className='btn'>By Now</button>
-      </Book>
-      
-      <Book
-        author={secondBook.author}
-        title={secondBook.title}
-        img={secondBook.img}
-      />
+        LIBRARY
+      </h1>
+      <section className="booklist">
+        <Book
+          author={firstBook.author}
+          title={firstBook.title}
+          img={firstBook.img}
+        >
+          <p className="p">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
+            repudiandae inventore eos qui animi sed iusto alias eius ea
+            sapiente.
+          </p>
+          <button className="btn">By Now</button>
+        </Book>
 
-      <Book
-        author={thirthBook.author}
-        title={thirthBook.title}
-        img={thirthBook.img}
-      />
+        <Book
+          author={secondBook.author}
+          title={secondBook.title}
+          img={secondBook.img}
+        >
+          <p className="p">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
+            repudiandae inventore eos qui animi sed iusto alias eius ea
+            sapiente.
+          </p>
+          <button className="btn">By Now</button>
+        </Book>
 
-      <Book
-        author={fourthBook.author}
-        title={fourthBook.title}
-        img={fourthBook.img}
-      />
-      <Book
-        author={fifthBook.author}
-        title={fifthBook.title}
-        img={fifthBook.img}
-      />
-      <Book
-        author={sixthBook.author}
-        title={sixthBook.title}
-        img={sixthBook.img}
-      />
-    </section>
+        <Book
+          author={thirthBook.author}
+          title={thirthBook.title}
+          img={thirthBook.img}
+        >
+          <p className="p">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
+            repudiandae inventore eos qui animi sed iusto alias eius ea
+            sapiente.
+          </p>
+          <button className="btn">By Now</button>
+        </Book>
+
+        <Book
+          author={fourthBook.author}
+          title={fourthBook.title}
+          img={fourthBook.img}
+        >
+          <p className="p">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
+            repudiandae inventore eos qui animi sed iusto alias eius ea
+            sapiente.
+          </p>
+          <button className="btn">By Now</button>
+        </Book>
+        <Book
+          author={fifthBook.author}
+          title={fifthBook.title}
+          img={fifthBook.img}
+        >
+          <p className="p">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
+            repudiandae inventore eos qui animi sed iusto alias eius ea
+            sapiente.
+          </p>
+          <button className="btn">By Now</button>
+        </Book>
+        <Book
+          author={sixthBook.author}
+          title={sixthBook.title}
+          img={sixthBook.img}
+        >
+          <p className="p">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
+            repudiandae inventore eos qui animi sed iusto alias eius ea
+            sapiente.
+          </p>
+          <button className="btn">By Now</button>
+        </Book>
+      </section>
+    </main>
   )
 }
 
