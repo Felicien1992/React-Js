@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 
-
 const firstBook = {
   img: './images/imag7.jpg',
   author: 'Hannah Nicole Maehrer',
@@ -31,21 +30,10 @@ const fifthBook = {
 
 const sixthBook = {
   img: './images/imag6.jpg',
-  author: 'Gakuba',
-  title: 'Sanctuary of the Shadow by Aurora Ascher',
+  author: 'Aurora Ascher',
+  title: 'Sanctuary of the Shadow',
 }
 
-
-const Book = (props) => {
-  const {img,title,author} = props
-  return (
-    <article className="book">
-      <img src={img} />
-      <h2>{author}</h2>
-      <h4>{title}</h4>
-    </article>
-  )
-}
 
 function BookList() {
   return (
@@ -54,7 +42,13 @@ function BookList() {
         author={firstBook.author}
         title={firstBook.title}
         img={firstBook.img}
-      />
+      >
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
+          repudiandae inventore eos qui animi sed iusto alias eius ea sapiente.
+        </p>
+        <button>click me</button>
+      </Book>
       <Book
         author={secondBook.author}
         title={secondBook.title}
@@ -84,8 +78,19 @@ function BookList() {
   )
 }
 
-//********************************************* */
+const Book = (props) => {
+  const { img, title, author, children } = props
+  return (
+    <article className="book">
+      <img src={img} />
+      <h2>{author}</h2>
+      <h4>{title}</h4>
+      {children}
+    </article>
+  )
+}
 
+//********************************************* */
 
 // const Book = (props) => {
 //   return (
@@ -97,7 +102,6 @@ function BookList() {
 //   )
 // }
 
-
 // function BookList() {
 //   return (
 //     <section className="booklist">
@@ -107,7 +111,6 @@ function BookList() {
 //     </section>
 //   )
 // }
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
