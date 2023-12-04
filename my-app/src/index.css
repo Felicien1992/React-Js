@@ -18,6 +18,16 @@ body {
   display: grid;
   gap: 2rem;
 }
+.btn{
+  background: red;
+  padding: 8px;
+  width: 90px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+  color: #fff;
+  font-size: large;
+}
 
 @media screen and (min-width: 768px) {
   .booklist {

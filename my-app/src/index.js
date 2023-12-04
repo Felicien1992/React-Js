@@ -43,22 +43,25 @@ function BookList() {
         title={firstBook.title}
         img={firstBook.img}
       >
-        <p>
+        <p className='p'>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
           repudiandae inventore eos qui animi sed iusto alias eius ea sapiente.
         </p>
-        <button>click me</button>
+        <button className='btn'>By Now</button>
       </Book>
+      
       <Book
         author={secondBook.author}
         title={secondBook.title}
         img={secondBook.img}
       />
+
       <Book
         author={thirthBook.author}
         title={thirthBook.title}
         img={thirthBook.img}
       />
+
       <Book
         author={fourthBook.author}
         title={fourthBook.title}
