@@ -7,32 +7,38 @@ const books = [
     img: './images/imag7.jpg',
     author: 'Hannah Nicole Maehrer',
     title: 'Assistant to the Villain',
+    id: 1,
   },
   {
     img: './images/imag5.jpg',
     author: 'Rachel Howzell Hall',
     title: 'The Last One',
+    id: 2,
   },
   {
     img: './images/imag4.jpg',
     author: 'Cecy Robson',
     title: 'Bloodguard',
+    id: 3,
   },
   {
     img: './images/imag3.jpg',
     author: 'Tracy Wolff and Nina Croft',
     title: 'Star Bringer',
+    id: 4,
   },
   {
     img: './images/imag2.jpg',
     author: 'Linde',
     title: 'The Wren in the Holly Library',
+    id: 5,
   },
 
   {
     img: './images/imag6.jpg',
     author: 'Aurora Ascher',
     title: 'Sanctuary of the Shadow',
+    id: 6,
   },
 ]
 
@@ -40,7 +46,7 @@ function BookList() {
   return (
     <section className="booklist">
       {books.map((book, id) => {
-        return <Book key={book.id} {...book}></Book>
+        return <Book key={id} {...book}></Book>
       })}
     </section>
   )
