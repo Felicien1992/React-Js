@@ -65,3 +65,8 @@ body {
   margin-top: 1rem;
   font-size: 1rem;
 }
+.book h5{
+  color: #873946;
+  font-weight: 700;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
